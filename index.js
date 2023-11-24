@@ -1,7 +1,7 @@
 var client;
 
 function MQTTconnect() {
-  client = new Paho.MQTT.Client("192.168.3.103", 1882, "clientId");
+  client = new Paho.MQTT.Client("mqtt.lsong.one", 8888, "clientId");
   return new Promise((resolve, reject) => {
     client.connect({
       onSuccess: resolve,
